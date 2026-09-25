@@ -1,23 +1,51 @@
 aid: annexon-biosciences
+
 name: Annexon Biosciences
-description: 'Annexon Biosciences is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Annexon Biosciences is a biotechnology company focused on developing novel therapeutics that target the innate immune system. The company leverages its proprietary platform to discover and advance antibodies and other biologics aimed at treating inflammatory and neurodegenerative diseases. Founded to address unmet medical needs, Annexon Biosciences collaborates with academic institutions and industry partners to bring innovative treatments to patients.'
+
 url: https://raw.githubusercontent.com/api-evangelist/annexon-biosciences/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
 - Company
-apis: []
+- Biotechnology
+- Therapeutics
+- Immunology
+- DrugDiscovery
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/annexon-biosciences-hosts.yml
+- type: Vendors
+  url: vendors/annexon-biosciences-vendors.yml
+- type: DomainSecurity
+  url: security/annexon-biosciences-domain-security.yml
 - type: Website
   url: https://forgeglobal.com/annexon-biosciences_stock/
+
+apis: []
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 3
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
